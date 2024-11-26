@@ -1,0 +1,330 @@
+:root {
+    --content-width: 1200px;
+    --content-width-mobile: 740px;
+    --button-back-color: rgb(255, 213, 26);
+    --button-text-color: black;
+}
+
+.page_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.button {
+    text-decoration: none;
+    border: 0;
+    color: var(--button-text-color);
+    background-color: var(--button-back-color);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.501);
+    transition: all 0.5s ease 0s;
+}
+
+.button:hover {
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.501);
+}
+
+.header_container {
+    display: flex;
+    justify-content: center;
+    background: rgb(155,218,255);
+    background: linear-gradient(180deg, rgba(155,218,255,1) 2%, rgba(17,116,230,1) 99%, rgba(4,158,255,1) 100%); 
+    color: white;    
+    width: 100%;
+
+}
+.header_content_wrap {
+    width: var(--content-width);
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0 120px 0;
+}
+
+.header_offer_logo {
+    margin-bottom: 50px;
+    animation-delay: 0.5s;
+}
+.header_offer h1 {
+    font-size: 35px;
+}
+.header_offer span {
+    display: inline-block;
+    font-size: 45px;
+    font-weight: 1000;
+    font-family: 'Ubuntu', sans-serif;
+}
+.header_offer p {
+    margin-top: 30px;
+    line-height: 1.5;
+    font-size: 12px;
+}
+
+.header_offer_getMore {
+    display: block;
+    padding: 15px 25px;
+    margin-top: 50px;
+    width:fit-content;
+}
+.header_image {
+    margin-top: 50px;
+    animation-name: animation1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes animation1 {
+    0%{
+        
+    }
+    50%{
+        transform: translate(0, 30px);
+    }
+    100%{
+        
+    }
+}
+
+
+.main_container {
+    width: 100%;
+}
+.H3 {
+    font-size: 28px;
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.main_info {
+    display: flex;
+    justify-content: center;
+}
+.main_info_content_wrap {
+    width: var(--content-width);
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0;
+}
+
+.main_info_blocks {
+    display: flex;
+    justify-content: space-between;
+}
+.main_info_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.main_info_block div {
+    margin-bottom: 30px;
+    animation-name: animation2;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes animation2 {
+    0%{
+        
+    }
+    50%{
+        transform: scale(0.93) translate(0, 10px);
+    }
+    100%{
+        
+    }
+}
+.main_info_block h5 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.main_info_block p {
+    width: 300px;
+    text-align: center;
+    color: grey;
+}
+
+.register_labels {
+    width: 100%;
+    text-align: left;
+}
+.error {
+    width: 100%;
+    text-align: left;
+    color: red;
+    margin: 0;
+    display: none;
+}
+.main_form {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(226, 231, 239);
+}
+.register {
+    background-color: rgb(238, 238, 238);
+}
+
+.main_form_content_wrap {
+    width: var(--content-width);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 80px 0;
+}
+.main_form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main_form_inputs {
+    margin: 10px 0;
+    padding-left: 20px;
+    height: 40px;
+    width: 100%;
+    border: 0;
+    transition: all 0.5s ease 0s;;
+}
+.main_form_inputs:focus {
+    transform: scale(1.05);
+}
+.main_form_inputs::placeholder {
+    text-indent: 5px;
+    font-size: 12px;
+}
+
+.main_form_inputs_notice {
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+.main_form_button {
+    width: 100%;
+    height: 40px;
+}
+
+.footer_container {
+    background: rgb(17,116,230);
+    background: linear-gradient(180deg, rgba(17,116,230,1) 35%, rgba(4,158,255,1) 49%, rgba(155,218,255,1) 95%); 
+    width: 100%;
+    color: white;
+}
+
+.footer_container div {
+    text-align: center;
+    padding: 30px;
+    font-size: 11px;
+}
+
+
+
+@media screen and (max-width: 1199px) and (min-width: 992px)
+{
+    .header_content_wrap{
+        width: auto;
+    }
+	.header_offer p {
+        font-size: 14px;
+    }
+    .header_offer_getMore {
+        text-align: center;
+        width: 80%;
+        font-size: 17px;
+    }
+
+
+    .main_info_content_wrap {
+        width: auto;
+        margin: 40px 0;
+    }
+    .H3 {
+        margin-bottom: 20px;
+    }
+    .main_info_block h5 {
+        font-size: 23px;
+    }
+    .main_info_block p {
+        font-size: 20px;
+    }
+
+
+    .main_form_content_wrap {
+        margin: 40px 0;
+    }
+    .main_form_inputs {
+        height: 60px;
+    }
+    .main_form_inputs::placeholder {
+        text-indent: 5px;
+        font-size: 18px;
+    }
+    .main_form_button {
+        font-size: 20px;
+        height: 60px;
+    }
+
+    .footer_container div {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px)
+{
+    .header_container {
+        flex-direction: column;
+    }
+    .header_content_wrap {
+        width: auto;
+    }
+	.header_offer {
+        text-align: center;
+    }
+    .header_offer h1 {
+        font-size: 38px;
+    }
+    .header_offer p {
+        font-size: 20px;
+    }
+    .header_offer_getMore {
+        width: 100%;
+        font-size: 21px;
+    }
+    .header_image {
+        text-align: center;
+    }
+
+
+    .H3 {
+        font-size: 33px;
+        margin-bottom: 30px;
+    }
+    .main_info_content_wrap {
+        width: auto;
+        margin: 40px 0;
+    }
+    .main_info_block h5 {
+        font-size: 27px;
+    }
+    .main_info_block p {
+        font-size: 22px;
+        width: 500px;
+    }
+
+
+    .main_form_content_wrap {
+        margin: 40px 0;
+    }
+    .main_form_inputs {
+        height: 80px;
+    }
+    .main_form_inputs::placeholder {
+        text-indent: 5px;
+        font-size: 22px;
+    }
+    .main_form_button {
+        font-size: 24px;
+        height: 80px;
+    }
+
+
+    .footer_container div {
+        font-size: 18px;
+    }
+}
